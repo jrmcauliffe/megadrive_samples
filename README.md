@@ -6,6 +6,6 @@ Each sample is heavily commented, with explanations of the basic concepts for be
 
 Assemble each sample with:
 
-   ASM68K.EXE /p main.asm,rom.bin
+`asl hello.asm && p2bin hello.p`
 
 All samples guaranteed to run on genuine hardware, and all good emulators.
