@@ -278,7 +278,7 @@ SetVSRAMWrite: macro addr
 ;==============================================================
 
 ; Writes a sprite attribute structure to 4 registers, ready to write to VRAM
-BuildSpriteStructure macro xpos,ypos,dimensionbits,nextid,prioritybit,paletteid,flipx,flipy,tileid,reg1,reg2,reg3,reg4
+BuildSpriteStructure: macro xpos,ypos,dimensionbits,nextid,prioritybit,paletteid,flipx,flipy,tileid,reg1,reg2,reg3,reg4
 	move.w #ypos, reg1
 	move.w #(dimensionbits<<8|nextid), reg2
 	move.w #(prioritybit<<14|paletteid<<13|flipx<<11|flipy<<10|tileid), reg3
